@@ -15,7 +15,7 @@ public class Carrito {
     private int SeatingCapacity;
     private float MaximumSpeed;
     private Color Color;
-    private float CurrentSpeed;
+    private double CurrentSpeed;
 
     public Carrito() {
 
@@ -106,7 +106,7 @@ public class Carrito {
         this.Color = Color;
     }
 
-    public float getCurrentSpeed() {
+    public double getCurrentSpeed() {
         return CurrentSpeed;
     }
 

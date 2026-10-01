@@ -112,10 +112,10 @@ public class Carrito {
 
     public void setCurrentSpeed(float CurrentSpeed) {
         if (CurrentSpeed > MaximumSpeed) {
-            System.out.println("No exceder la velocidad maxima (" + MaximumSpeed + " km/h). Poner la velocidad maxima.");
+            System.out.println("No exceder la velocidad maxima (" + MaximumSpeed + " km/h) Poner la velocidad maxima");
             this.CurrentSpeed = MaximumSpeed;
         } else if (CurrentSpeed < 0) {
-            System.out.println("La velocidad no puede ser negativa. Ajuste de velocidad a 0.");
+            System.out.println("La velocidad no puede ser negativa, ajuste de velocidad a 0.");
             this.CurrentSpeed = 0;
         } else {
             this.CurrentSpeed = CurrentSpeed;
@@ -139,7 +139,7 @@ public class Carrito {
 
     public double EstimatedArrivalTime(double distanceKm) {
         if (CurrentSpeed <= 0) {
-            System.out.println("Error.. la velocidad actual es ero por lo que no se puede calcular el tiempo de llegada");
+            System.out.println("Error la velocidad actual es cero por lo que no se puede calcular el tiempo de llegada");
             return Double.POSITIVE_INFINITY;
         }
         return distanceKm / CurrentSpeed;
